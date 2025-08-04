@@ -3,7 +3,7 @@ import sample_cover from './sample_cover.jpg'
 import sample_profile from './sampe_profile.jpg'
 import bgImage from './bgImage.png'
 import group_users from './group_users.png'
-import {Home, MessageCircle, Serach, UserIcon, Users} from 'lucide-react'
+import {Home, MessageCircle, Search, UserIcon, Users} from 'lucide-react'
 import sponsored_img from './sponsored_img.png'
 export const assets={
     logo,
@@ -50,6 +50,7 @@ const dummyUser2Data = {
 
 const dummyUser3Data = {
     ...dummyUserData,
+    ...dummyUser2Data,
     _id: "user_3",
     username: "alexa_james",
     full_name: "Alexa james",
@@ -57,6 +58,7 @@ const dummyUser3Data = {
 }
 
 export const dummyStoriesData=[
+    {dummyUser3Data},
     {
         "_id": "68833d466e4b42b685068860",
         "user": dummyUserData,
